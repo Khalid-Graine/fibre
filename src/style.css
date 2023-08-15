@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@layer components {
+  .container {
+    @apply mx-auto w-full p-2 py-6 sm:w-10/12;
+  }
+}
+@layer components {
+  .card {
+    @apply flex flex-col gap-3 rounded-lg border border-[#ddd] p-2;
+  }
+}
+
+@layer components {
+  .effect {
+    @apply translate-x-2 transform cursor-pointer font-bold transition-all duration-200 ease-linear;
+  }
+}
+
+@layer components {
+  .show {
+    @apply border border-green-400;
+  }
+}
+
